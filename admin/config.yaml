@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main # Or 'master' if your GitHub default branch is master
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "site_config"
+        label: "Homepage Settings"
+        file: "_data/site.json"
+        fields:
+          - { label: "Page Title", name: "title", widget: "string" }
+          - { label: "Button Color", name: "primary_color", widget: "color" }
