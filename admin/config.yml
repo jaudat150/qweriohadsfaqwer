@@ -3,7 +3,7 @@ backend:
   repo: jaudat150/qweriohadsfaqwer
   branch: main
   client_id: "Ov23li7vXZTVwEk1kJwp"
-  client_secret: "f0be32e3e0d6cb4349df04552eed471e94dad2e3"
+  client_secret: "f0be32e0d6cb4349df04552eed471e94dad2e3"
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
