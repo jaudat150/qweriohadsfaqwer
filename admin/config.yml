@@ -1,8 +1,6 @@
 backend:
-  name: github
-  repo: jaudat150/qweriohadsfaqwer
+  name: git-gateway
   branch: main
-  # Remove client_id and client_secret if you switch to Netlify Identity (recommended)
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
@@ -13,7 +11,7 @@ collections:
     files:
       - name: "site_config"
         label: "Homepage Settings"
-        file: "site.json"
+        file: "_data/site.json"
         fields:
           - { label: "Page Title", name: "title", widget: "string" }
           - { label: "Button Color", name: "primary_color", widget: "color" }
