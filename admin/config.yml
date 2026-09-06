@@ -2,8 +2,7 @@ backend:
   name: github
   repo: jaudat150/qweriohadsfaqwer
   branch: main
-  client_id: "Ov23li7vXZTVwEk1kJwp"
-  client_secret: "f0be32e0d6cb4349df04552eed471e94dad2e3"
+  # Remove client_id and client_secret if you switch to Netlify Identity (recommended)
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
@@ -14,7 +13,7 @@ collections:
     files:
       - name: "site_config"
         label: "Homepage Settings"
-        file: "_data/site.json"
+        file: "site.json"
         fields:
           - { label: "Page Title", name: "title", widget: "string" }
           - { label: "Button Color", name: "primary_color", widget: "color" }
