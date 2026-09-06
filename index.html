@@ -11,29 +11,21 @@
     </style>
 </head>
 <body>
-
-    <!-- Elements that will be updated by the CMS -->
     <h1 id="site-title">Loading site data...</h1>
     <button id="my-button">Click Me</button>
-
-    <!-- Link to your Admin Panel -->
     <a href="/admin/" class="admin-link">Go to Admin Panel</a>
 
     <script>
-        // Fetch the JSON data from the CORRECT location (_data folder)
         fetch('/_data/site.json') 
             .then(response => response.json())
             .then(data => {
-                // Update the page title
                 document.title = data.title;
                 document.getElementById('site-title').innerText = data.title;
-                
-                // Update the button color
                 document.getElementById('my-button').style.backgroundColor = data.primary_color;
             })
             .catch(error => {
                 console.error('Error loading site data:', error);
-                document.getElementById('site-title').innerText = 'Error loading data. Check console.';
+                document.getElementById('site-title').innerText = 'Error loading data.';
             });
     </script>
 </body>
