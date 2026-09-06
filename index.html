@@ -20,8 +20,8 @@
     <a href="/admin/" class="admin-link">Go to Admin Panel</a>
 
     <script>
-        // Fetch the JSON data created by Decap CMS
-        fetch('/site.json') 
+        // Fetch the JSON data from the CORRECT location (_data folder)
+        fetch('/_data/site.json') 
             .then(response => response.json())
             .then(data => {
                 // Update the page title
@@ -33,7 +33,7 @@
             })
             .catch(error => {
                 console.error('Error loading site data:', error);
-                document.getElementById('site-title').innerText = 'Error loading data. Is site.json in the root folder?';
+                document.getElementById('site-title').innerText = 'Error loading data. Check console.';
             });
     </script>
 </body>
